@@ -79,7 +79,7 @@
     }
   }
 
-  .ad_link__ {
+  .banner_link__ {
     display: flex;
     // align-items: center;
     justify-content: space-between;
@@ -128,12 +128,12 @@
       }
     }
 
-    .ad_link__ {
+    .banner_link__ {
       flex-direction: column;
       padding-inline-start: 0;
       text-align: center;
     }
-    .ad_link {
+    .banner_link {
       width: 100%;
       margin-top: 10px;
     }
