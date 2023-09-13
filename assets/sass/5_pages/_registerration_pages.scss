@@ -1,0 +1,248 @@
+.registeration_title {
+  font-size: 21px;
+  margin: 0;
+}
+
+.second_registeration_title {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.registeration_sub_title {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.form_section_head {
+  font-size: 12px;
+  font-weight: 500;
+  color: $primaryColor;
+  margin-bottom: 23px;
+}
+
+.chosen_services_title {
+  font-size: 12px;
+  font-weight: 300;
+  color: $headingMainColor;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: $secondaryColor;
+    border-radius: 50%;
+    display: block;
+    margin-inline-end: 14px;
+  }
+
+  &.chosen_second_services_title {
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 1px solid rgba($secondaryColor, 0.4);
+      border-radius: 50%;
+      display: block;
+      margin-inline-end: 14px;
+    }
+  }
+}
+
+.chosen_main_services_blocks_wrapper,
+.chosen_secondary_services_blocks_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-inline-start: 14px;
+  padding-bottom: 13px;
+}
+
+.chosen_secondary_services_blocks_wrapper {
+  margin-bottom: 15px;
+}
+
+.chosen_main_services_blocks_wrapper {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: calc(100% + 18px);
+    background-color: rgba($secondaryColor, 0.4);
+    top: -15px;
+    inset-inline-start: 5px;
+  }
+}
+
+.chosen_services_block {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border: 1px solid $secondBorderColor;
+  width: fit-content;
+  border-radius: 12px;
+  gap: 10px;
+
+  .service_name {
+    font-weight: 300;
+    font-size: 12px;
+    color: $headingMainColor;
+    margin: 0;
+  }
+}
+
+.forget_password_link__ {
+  height: 100%;
+  margin: 10px auto;
+  color: $headingMainColor;
+}
+
+.form_label_for_info__ {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .head__,
+  .link__ {
+    font-size: 15px;
+    color: $headingSecondaryColor;
+    margin-bottom: 0;
+  }
+
+  .link__ {
+    color: $headingMainColor;
+    transition: 0.5s;
+    margin-inline-start: 10px;
+  }
+
+  &.border_wrapper__ {
+    border: 1px solid $primaryColor;
+    border-radius: $mainBorderRadius;
+    padding: 20px 10px;
+    height: 67px;
+    color: $headingMainColor;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registeration_page__ {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../images/registerration_pages_background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  @include sm {
+    padding: 60px 0;
+  }
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  direction: ltr;
+  position: relative;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  gap: 9px;
+
+  .code-input {
+    text-align: center;
+    width: 81px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: $mainBorderRadius;
+    border: none;
+    font-size: 30px;
+    color: $secondaryColor;
+    font-family: sans-serif;
+    outline: none;
+    margin: 0;
+    transition: 0.5s;
+
+    &.active {
+      background-color: $headingMainColor;
+      color: #fff;
+    }
+
+    &:focus {
+      border-color: $secondaryColor;
+    }
+  }
+}
+
+.send_code_again__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 14px;
+  color: $paragraphMainColor;
+
+  &:hover {
+    color: $secondaryColor;
+  }
+
+  .shape__ {
+    .circular-chart {
+      display: block;
+      margin: 0;
+      margin-inline-end: 10px;
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 3.8;
+    }
+
+    .circle {
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+      stroke: $secondaryColor;
+    }
+
+    // @keyframes progress {
+    //   0% {
+    //     stroke-dasharray: 0 100;
+    //   }
+    // }
+
+    .percentage {
+      fill: $secondaryColor;
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+  }
+}

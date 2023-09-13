@@ -1,0 +1,39 @@
+.site_link {
+  background-color: $secondaryColor;
+  color: #fff;
+  font-size: 14px;
+  padding: 25px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 15px;
+  gap: 10px;
+  margin: 0 auto;
+  transition: 0.5s;
+
+  @include sm {
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+
+  @include xxs {
+    font-size: 10px;
+    padding: 10px 15px;
+
+    .icon__ {
+      transform: scale(0.6);
+    }
+  }
+
+  .icon__ {
+    filter: brightness(0) invert(1);
+  }
+
+  &:hover {
+    background-color: $secondaryColorHover;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+

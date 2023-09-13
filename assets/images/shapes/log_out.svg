@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow-up_linear" data-name="arrow-up/linear" transform="translate(24) rotate(90)">
+    <g id="vuesax_linear_arrow-up" data-name="vuesax/linear/arrow-up">
+      <g id="arrow-up">
+        <path id="Vector" d="M20,10A10,10,0,1,1,10,0,10,10,0,0,1,20,10Z" transform="translate(2 2)" fill="none" stroke="#e2114a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-2" data-name="Vector" d="M0,6V0" transform="translate(12 9.5)" fill="none" stroke="#e2114a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-3" data-name="Vector" d="M0,3,3,0,6,3" transform="translate(9 8.5)" fill="none" stroke="#e2114a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(24 24) rotate(180)" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

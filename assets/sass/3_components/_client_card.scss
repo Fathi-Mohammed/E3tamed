@@ -1,0 +1,48 @@
+.client_card {
+  display: flex;
+  align-items: center;
+  max-width: 352px;
+  padding: 17px 27px;
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 0 40px rgba($secondShadowColor, 0.04);
+
+  .client_name {
+    font-size: 11px;
+    font-weight: 300;
+    color: $headingMainColor;
+    margin: 0;
+    margin-inline-start: 15px;
+  }
+
+  &.with_contacts {
+    max-width: unset;
+    width: 100%;
+
+    @include sm {
+      flex-wrap: wrap;
+    }
+
+    @include xxs {
+      width: 100%;
+    }
+    @include xxs {
+      gap: 10px;
+    }
+
+    .buttons_group__ {
+      margin-inline-start: auto;
+      width: 70%;
+
+      @include xxs {
+        width: 100%;
+      }
+    }
+
+    .provider_card_phone_link {
+      flex-shrink: 0;
+      gap: 5px;
+      padding: 13px 8px;
+      font-size: 12px;
+    }
+  }
+}

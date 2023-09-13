@@ -1,0 +1,32 @@
+.request_details_provider_perspective_page {
+  .offer_info__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 27px;
+    border-radius: $mainBorderRadius;
+    box-shadow: 0 0 40px rgba($secondShadowColor, 0.04);
+
+    .title__ {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 500;
+      color: $headingMainColor;
+  
+      @include xxs {
+        font-size: 9px;
+      }
+    }
+  
+    .price {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 500;
+      color: $secondaryColor;
+  
+      @include xxs {
+        font-size: 14px;
+      }
+    }
+  }
+}

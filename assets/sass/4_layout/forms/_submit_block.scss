@@ -1,0 +1,356 @@
+.submit-button__ {
+  color: $headingMainColor;
+  background: $primaryColor;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.5s;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  padding: 0 30px;
+  height: 67px;
+  width: max-content;
+  border-radius: $mainBorderRadius;
+  min-width: 134px;
+
+  .icon__ {
+    flex-shrink: 0;
+    margin-inline-start: 5px;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    background-color: rgba($primaryColor, 0.9);
+    text-decoration: none;
+    color: $headingMainColor;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &.centered__ {
+    margin: 0 auto;
+    min-width: 236px;
+  }
+
+  &:disabled {
+    background-color: $mainBackgroundColor;
+  }
+
+  &.secondaryColorButton {
+    background-color: $secondaryColor;
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.9);
+    }
+  }
+
+  &.cancellation_button {
+    background-color: #fff;
+    color: $headingSecondaryColor;
+    border: 1px solid $borderColor;
+
+    &:hover {
+      background-color: rgba($headingSecondaryColor, 0.05);
+    }
+  }
+
+  &.like_button__ {
+    min-width: 100px;
+    height: 40px;
+    background-color: rgba($primaryColor, 0.1);
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+
+    @include sm {
+      min-width: 192.6px;
+    }
+
+    .icon__ {
+      margin: 0;
+      margin-inline-end: 5px;
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.full_width__ {
+    width: 100%;
+  }
+
+  &.fixed_size__ {
+    min-width: 140px;
+  }
+
+  &.full_width_sm__ {
+    @include sm {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &.delete_button__ {
+    border-radius: 5px;
+    border: 1px solid $redColor;
+    color: $redColor;
+    height: 32px;
+    min-width: 87px;
+
+    &:hover {
+      background-color: rgba($redColor, 0.1);
+    }
+  }
+
+  &.call_button {
+    font-size: 12px;
+    min-width: 95px;
+    height: 40px;
+    background-color: #e6f9fa;
+    border-radius: 5px;
+    border: 1px solid #22b1bf;
+    color: #22b1bf;
+
+    .phone_icon {
+      margin-inline-end: 11px;
+      fill: #22b1bf;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #22b1bf;
+
+      .phone_icon {
+        fill: #fff;
+      }
+
+      .phone_icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &.header_search_button {
+    min-width: fit-content;
+    padding: 10px;
+    margin-inline-end: 8px;
+    background-color: rgba($borderBreakColor, 0.13);
+    border: 1px solid rgba($borderBreakColor, 0.13);
+    box-shadow: 0 0 60px rgba(#5d5d5d, 0.13);
+
+    .icon__ {
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: rgba($borderBreakColor, 0.18);
+    }
+  }
+
+  &.main_submit_button__ {
+    width: 260px;
+    font-size: 15px;
+
+    @include xs {
+      height: 35px;
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+
+  &.provider_card_messaging_button {
+    font-size: 12px;
+    gap: 10px;
+    height: 49px;
+    width: 50%;
+
+    @include md {
+      min-width: 30%;
+      font-size: 10px;
+      gap: 5px;
+    }
+
+    @include sm {
+      min-width: fit-content;
+      padding: 0;
+    }
+  }
+
+  &.view_invoice_details {
+    font-size: 15px;
+    color: $secondaryColor;
+    background-color: transparent;
+    gap: 10px;
+    height: 49px;
+    padding: 0;
+    border-radius: 11px;
+
+    @include sm {
+      min-width: 100%;
+    }
+
+    .icon__ {
+      &:first-of-type {
+        background-color: rgba($secondaryColor, 0.15);
+        padding: 13px;
+        border-radius: 11px;
+        margin: 0;
+        margin-inline-end: 27px;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover {
+      .icon__ {
+        &:first-of-type {
+          background-color: rgba($secondaryColor, 0.25);
+        }
+      }
+    }
+  }
+
+  &.review_the_invoice_button {
+    font-size: 15px;
+    color: #fff;
+    gap: 20px;
+    height: 53px;
+    border-radius: 11px;
+    background-color: $secondaryColor;
+
+    @include sm {
+      min-width: 100%;
+    }
+  }
+
+  &.provider_card_accept_button {
+    height: 49px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  &.provider_card_reject_button {
+    padding: 0;
+    height: 49px;
+    min-width: 45px;
+    width: 45px;
+    background-color: #e2114a;
+
+    .icon__ {
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: rgba(#e2114a, 0.8);
+    }
+  }
+
+  &.chat_send_button {
+    width: 65px;
+    min-width: unset;
+    padding: 0;
+    background-color: transparent;
+
+    .icon__ {
+      margin: 0;
+    }
+
+    &:hover {
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.rate_submit_button {
+    min-width: 76px;
+    height: 49px;
+  }
+
+  &.log_out_button {
+    background-color: $redColor;
+    color: #fff;
+    gap: 10px;
+    .icon__ {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &.chosen_services_delete_button {
+    background-color: transparent;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0;
+  }
+
+  &.send_offer_button {
+    font-size: 12px;
+    font-weight: 500;
+
+    @include sm {
+      min-width: 100%;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    
+  &.modify_button__ {
+    height: 49px;
+    padding: 0 50px;
+  }
+  }
+
+  &.create_invoice_button {
+    background-color: $secondaryColor;
+    color: #fff;
+    height: 49px;
+    font-size: 12px;
+  }
+
+  &.finish_request_button__ {
+    background-color: $redColor;
+    font-size: 12px;
+    height: 49px;
+    color: #fff;
+    border-radius: 15px;
+    
+    @include sm {
+      min-width: 50%;
+    }
+
+    &:hover {
+      background-color: rgba($redColor, 0.8);
+    }
+  }
+
+  &.cancel_request_button__ {
+    border-radius: 15px;
+    background-color: rgba($redColor, 0.08);
+    font-size: 12px;
+    height: 49px;
+    color: $redColor;
+
+    @include sm {
+      min-width: 50%;
+    }
+
+    &:hover {
+      background-color: rgba($redColor, 0.15);
+    }
+  }
+}

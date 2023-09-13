@@ -1,0 +1,96 @@
+.default_page__ {
+  padding-top: 45px;
+  margin-bottom: 90px;
+  // min-height: 600px;
+
+  @include sm {
+    padding-top: 20px;
+  }
+}
+
+.page_title__ {
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  gap: 45px;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+
+  >.title__ {
+    font-size: 21px !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+  }
+
+  .sub_title__ {
+    font-size: 12px;
+    font-weight: 300;
+    color: $paragraphFourthColor;
+    margin-top: 10px;
+    margin-inline-start: 8px;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.without_icon {
+    display: block;
+  }
+
+  &.none_margin {
+    margin-bottom: 0;
+  }
+}
+
+.page_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 38px;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+
+  @include xs {
+    margin-bottom: 5px;
+  }
+
+  &.column_small_size {
+    @include sm {
+      flex-direction: column;
+    }
+  }
+}
+
+// section defaults
+.default_section__ {
+  padding-top: 100px;
+
+  @include sm {
+    padding-top: 30px;
+  }
+}
+
+.government_services_section_row_modify__ {
+  row-gap: 30px;
+}
+
+.row_modify {
+  align-items: center;
+
+  @include md {
+    justify-content: center;
+  }
+
+  &.with_row_gap {
+    row-gap: 30px;
+  }
+}
+
+.col__ {
+  align-self: flex-start;
+}

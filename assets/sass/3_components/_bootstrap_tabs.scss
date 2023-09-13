@@ -1,0 +1,183 @@
+.nav-tabs {
+  padding: 0;
+  border: none;
+  margin-bottom: 30px !important;
+  gap: 15px;
+
+  .nav-item {
+    border: none;
+    height: 67px;
+    width: 203px;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: $mainBorderRadius;
+    color: $headingMainColor;
+    background-color: transparent;
+    border: 1px solid $borderColor;
+
+    
+    @include xs {
+      max-width: calc(50% - 8px);
+    }
+    
+    &.active {
+      background-color: $primaryColor;
+      font-weight: 500;
+    }
+  }
+}
+
+@include sm {
+  .nav-tabs {
+    justify-content: center;
+    gap: 10px;
+
+    .nav-item {
+      min-width: calc(100%/2 - 5px);
+    }
+  }
+}
+
+.nav-pills {
+  padding: 0;
+  border: none;
+
+  .nav-link {
+    border: none;
+    height: 48px;
+    min-width: 240px;
+    padding: 0 17px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: $mainBorderRadius;
+    color: $headingMainColor;
+    font-size: 14px;
+
+    @include md {
+      min-width: 100%;
+    }
+
+    .icon__ {
+      margin-inline-end: 13px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.active {
+      background-color: $secondaryColor;
+      color: #fff;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.my_requests_page__ {
+  .nav-item {
+    width: 168px;
+    
+    @include xxs {
+      width: 135px;
+    }
+  }
+}
+
+
+
+.registeration_page__ {
+  .nav-tabs {
+    padding: 0;
+    border: none;
+    margin-bottom: 30px !important;
+    gap: 8px;
+    justify-content: center;
+
+    .nav-item {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 10px;
+      background-color: #F6F6F6;
+      height: 51px;
+      width: 167px;
+      cursor: pointer;
+      transition: 0.5s;
+      text-align: center;
+
+      @include xs {
+        width: calc(50% - 4px);
+      }
+      
+      .icon__ {
+        background-color: rgba(#000,0.04);
+        border-radius: 0 10px 10px 0;
+        padding: 14px 18px;
+        height: 100%;
+        transition: 0.5s;
+      }
+
+      .title__ {
+        margin: 0;
+        text-align: center;
+        color: $headingMainColor;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300;
+        transition: 0.5s;
+
+        @include xs {
+          font-size: 10px;
+        }
+      }
+      
+      
+      &.active {
+        background-color: $secondaryColor;
+        color: #fff;
+
+        .icon__ {
+          filter: brightness(0) invert(1);
+          background-color: rgba(#fff,0.22);
+        }
+        
+        .title__ {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+.my_requests_provider_perspective ,
+.government_services_page__ {
+  @include sm {
+    .nav-tabs {
+      justify-content: center;
+      gap: 5px;
+      
+      .nav-item {
+        border-radius: 10px;
+        width: fit-content;
+        min-width: calc(100%/3 - 10px);
+        font-size: 9px;
+        padding: 5px;
+        height: 50px;
+      }
+    }
+  }
+}

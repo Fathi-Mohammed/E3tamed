@@ -1,0 +1,157 @@
+.link-om {
+  color: $secondaryColor;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+
+  &.with_icon {
+    display: flex;
+    align-items: center;
+
+    .icon__ {
+      margin-inline-end: 5px;
+    }
+  }
+}
+
+.seconde_link__ {
+  text-decoration: none;
+  color: $secondaryColor;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  border: 1px solid $secondaryColor;
+  background-color: #e4f9fb;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.links_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 13px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+
+  &.main_link {
+    background-color: $primaryColor;
+    color: $headingMainColor;
+    width: 194px;
+    height: 57px;
+
+    &:hover {
+      background-color: $primaryColorHover;
+    }
+  }
+
+  &.app_download_link__ {
+    width: 100%;
+    background-color: #fff;
+    gap: 30px;
+    color: $headingMainColor;
+    border-radius: 15px;
+    box-shadow: 0 0 60px rgba(#8a8888, 0.16);
+    position: relative;
+    height: 67px;
+    z-index: 1;
+
+    .icon__ {
+      padding: 0;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      .icon__ {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.provider_card_phone_link {
+    background-color: rgba($primaryColor, 0.17);
+    gap: 15px;
+    height: 49px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 50%;
+    color: $headingMainColor;
+    
+    @include md {
+      min-width: 70%;
+      font-size: 10px;
+      gap: 5px;
+    }
+
+    @include sm {
+      padding: 5px;
+      font-style: 8px;
+      min-width: fit-content;
+    }
+    
+    &:hover {
+      background-color: rgba($primaryColor, 0.27);
+    }
+  }
+
+  &.request_card_link__ {
+    color: $primaryColor;
+    margin-inline-start: 10px;
+    padding: 5px 10px;
+    font-size: 11px;
+
+    @include sm {
+      margin-inline-start: 0;
+      padding: 0 5px;
+      font-size: 9px;
+    }
+
+    &:hover {
+      background: rgba($primaryColor, 0.2);
+    }
+  }
+
+  &.change_password_link__ {
+    justify-content: flex-start;
+    width: 100%;
+    height: 57px;
+    box-shadow: 0 0 40px rgba($secondShadowColor, 0.04);
+    padding: 0 33px;
+    color: $headingMainColor;
+    font-size: 13px;
+    font-weight: 300;
+
+
+    .icon__ {
+      &:last-of-type {
+        margin-inline-start: auto;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(#000, 0.02);
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

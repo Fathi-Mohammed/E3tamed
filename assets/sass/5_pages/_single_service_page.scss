@@ -1,0 +1,81 @@
+.single_service_page__ {
+	.figure__ {
+		padding-bottom: 28.86%;
+    border-radius: $mainBorderRadius;
+    overflow: hidden;
+    margin-bottom: 35px;
+
+    @include xxs {
+      padding-bottom: 50%;
+      margin-bottom: 10px;
+    }
+	}
+
+  .single_service_page_head__ {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include sm {
+      margin-bottom: 10px;
+    }
+
+    @include xs {
+      flex-direction: column;
+    }
+
+    .title_and_price_wrapper__ {
+      @include xs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+    }
+
+    .title__ {
+      font-size: 21px;
+      font-weight: 700;
+      margin-inline-start: 25px;
+      margin-bottom: 18px;
+      
+      @include sm {
+        font-size: 18px;
+      }
+      
+      @include xxs {
+        font-size: 16px;
+        margin-inline-start: 15px;
+      }
+    }
+
+    .sub_title__ {
+      font-size: 11px;
+      font-weight: 300;
+      color: $paragraphFourthColor;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 500;
+      color: $secondaryColor;
+
+      @include xs {
+        font-size: 16px;
+      }
+    }
+    
+  }
+
+  .parag__ {
+    font-size: 13px;
+    font-weight: 300;
+    color: $paragraphFourthColor;
+    line-height: 2;
+
+    @include xs {
+      font-size: 10px;
+    }
+  }
+}

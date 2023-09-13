@@ -1,0 +1,24 @@
+.site_head__ {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: $headingMainColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  @include sm {
+    font-size: 22px;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  &::before {
+    content: url(../images/shapes/title_shape.svg);
+    width: 60px;
+    height: 52px;
+  }
+}

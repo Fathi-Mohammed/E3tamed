@@ -1,0 +1,21 @@
+.main_section_title {
+    font-size: 14px;
+    font-weight: 500;
+    color: $headingMainColor;
+    text-transform: capitalize;
+    padding: 15px 26px;
+    background-color: $mainSectionTitleBackground;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        inset-inline-start: 0;
+        width: 8px;
+        height: 100%;
+        background-color: rgba($secondaryColor, 0.13);
+
+    }
+}

@@ -1,0 +1,39 @@
+.my_balance_page {
+  .figure__ {
+    margin: 60px 0 45px;
+  }
+
+  .balance_title {
+    font-size: 14px;
+    font-weight: 300;
+    color: $headingMainColor;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .balance_number {
+    text-align: center;
+    font-size: 47px;
+    font-weight: 700;
+    color: $primaryColor;
+    margin: 0;
+  }
+
+  .balance_currency {
+    font-size: 26px;
+    font-weight: 300;
+    color: $headingMainColor;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .view_newest_operations_link {
+    margin: 0 auto;
+    margin-bottom: 36px;
+
+    .figure__ {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.services_card__ {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 50px;
+  box-shadow: 0 0 40px rgba($secondShadowColor, 0.04);
+  margin-bottom: 30px;
+  border-radius: 18px;
+  background-color: #fff;
+  min-height: 222px;
+  transition: 0.5s;
+  
+  @include xxs {
+    min-height: 150px;
+    padding: 10px 15px;
+    
+  }
+
+  .figure__ {
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+
+  .title__ {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+    color: $headingFourthColor;
+    margin: 0;
+
+    @include xs {
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    background-color: $primaryColor;
+    text-decoration: none;
+
+    .figure__ {
+      filter: brightness(0) invert(1);
+    }
+
+    .title__ {
+      color: $headingMainColor;
+    }
+  }
+}
