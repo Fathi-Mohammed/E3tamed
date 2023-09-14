@@ -329,15 +329,15 @@
   display: flex;
   gap: 2px;
 
-  @include xxs {
-    font-size: 10px;
+  @include xs {
+    font-size: 12px;
   }
 
   .terms_and_conditions_link__ {
     font-size: 13px;
 
-    @include xxs {
-      font-size: 10px;
+    @include xs {
+      font-size: 12px;
     }
 
     &:hover {
