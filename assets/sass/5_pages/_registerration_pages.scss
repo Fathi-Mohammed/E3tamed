@@ -119,12 +119,20 @@
     font-size: 15px;
     color: $headingSecondaryColor;
     margin-bottom: 0;
+
+    @include xxs {
+      font-size: 10px;
+    }
   }
 
   .link__ {
-    color: $headingMainColor;
+    color: $secondaryColor !important;
     transition: 0.5s;
-    margin-inline-start: 10px;
+    margin-inline-start: 2px;
+
+    @include xxs {
+      font-size: 10px;
+    }
   }
 
   &.border_wrapper__ {
@@ -133,6 +141,10 @@
     padding: 20px 10px;
     height: 67px;
     color: $headingMainColor;
+    
+    .link__ {
+      color: $headingMainColor !important;
+    }
 
     &:hover {
       text-decoration: none;
@@ -187,6 +199,10 @@
     outline: none;
     margin: 0;
     transition: 0.5s;
+
+    @include xxs {
+      width: calc(25% - 8px);
+    }
 
     &.active {
       background-color: $headingMainColor;

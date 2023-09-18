@@ -43,9 +43,11 @@
   position: relative;
   z-index: 1;
   margin-top: 10px;
+  flex-wrap: nowrap;
+
 
   .block__ {
-    transition: 0.5s;
+    // transition: 0.5s;
     
     &.notifications_link_item__ {
       max-width: 37px;
@@ -92,15 +94,15 @@
       box-shadow: 0 0 60px rgba(#5D5D5D, 0.14);
       border-radius: 13px;
       overflow: hidden;
-      transition: 300ms;
+      transition: 0.5s;
 
       .icon__ {
-        position: relative;
-        min-width: 37px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-width: 18px;
+        height: 18px;
         font-size: 25px;
         transition: 0.5s;
         cursor: pointer;
@@ -122,15 +124,21 @@
 
 
       &.active {
-        transition: 200ms;
-        width: 429px;
+        transition: 2s;
+        width: 100%;
+        box-shadow: unset;
+
 
         .icon__ {
-          margin: 0 26px;
+          left: unset;
+          transform: unset;
+          transform: translateY(-50%);
+          inset-inline-start: 26px;
         }
 
 
         .header_search_input {
+          padding-inline-start: 70px;
           width: 100%;
           min-width: 429px;
           display: block;
@@ -237,7 +245,7 @@
             min-width: fit-content;
             min-height: fit-content;
             left: unset;
-            inset-inline-start: 5px;
+            inset-inline-start: 35px;
 
           }
         }

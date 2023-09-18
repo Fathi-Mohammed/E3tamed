@@ -19,6 +19,10 @@
     border-radius: 20px;
   }
 
+  @include xs {
+    padding: 30px 10px !important;
+  }
+
   &.small_padding {
     padding: 30px 90px 45px;
   }
@@ -32,7 +36,6 @@
   box-shadow: unset;
   border: none;
   max-width: 352px !important;
-
 }
 
 .form_image__ {
@@ -104,7 +107,7 @@
     color: $paragraphMainColor;
     margin-bottom: 0;
 
-    &.verification_parag__{
+    &.verification_parag__ {
       margin-bottom: 10px !important;
       font-weight: 300;
     }
@@ -151,7 +154,7 @@
     display: flex;
     align-items: center;
 
-    &.center__{
+    &.center__ {
       justify-content: center;
     }
 
@@ -159,7 +162,7 @@
       gap: 10px;
     }
   }
-  
+
   &.with_label__ {
     background-color: $inputBackgroundColor;
     padding: 12px 35px;
@@ -181,15 +184,14 @@
       padding: 0;
       border: none;
 
-      
-    &:focus,
-    &:active,
-    &:hover {
-      border-color: $primaryColor !important;
-      color: $headingMainColor !important;
-      outline: none !important;
-      box-shadow: none !important;
-    }
+      &:focus,
+      &:active,
+      &:hover {
+        border-color: $primaryColor !important;
+        color: $headingMainColor !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
     }
   }
 
@@ -202,7 +204,6 @@
       flex-direction: column;
     }
   }
-
 
   &.none_margin__ {
     margin: 0;
@@ -231,7 +232,6 @@
         border-color: transparent !important;
       }
     }
-
   }
 }
 
@@ -325,7 +325,7 @@
 
 .terms_and_conditions_label__ {
   margin-inline-start: 35px;
-  font-size: 13px;
+  font-size: 15px;
   display: flex;
   gap: 2px;
 
@@ -333,11 +333,20 @@
     font-size: 12px;
   }
 
+  @include xxs {
+    font-size: 10px;
+  }
+
   .terms_and_conditions_link__ {
     font-size: 13px;
+    color: $secondaryColor;
 
     @include xs {
       font-size: 12px;
+    }
+
+    @include xxs {
+      font-size: 10px;
     }
 
     &:hover {
@@ -403,9 +412,9 @@
     &::before {
       width: calc(100% + 7px);
       height: calc(100% + 7px);
-      background-color: rgba($primaryColor, 0.49) ;
+      background-color: rgba($primaryColor, 0.49);
       border-color: transparent;
-      }
+    }
   }
 
   .upload_profile_photo_label_overlay__ {
@@ -422,7 +431,7 @@
 
     &.uploaded {
       opacity: 0;
-      background-color: rgba($headingMainColor , 0.52);
+      background-color: rgba($headingMainColor, 0.52);
       transition: 0.5s;
 
       .icon__ {

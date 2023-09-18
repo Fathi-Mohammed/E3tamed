@@ -15,9 +15,9 @@ jQuery(document).ready(function ($) {
   verificationCodeSeprate();
   selectPIckerInit($);
   toggleHeaderSearchHover();
-  customerEvaluationIconEvent();
   customDropdownSelectAction();
   uploadProfilePhoto();
+  chatScrollDirectionDown();
 });
 
 // functions init
@@ -223,17 +223,14 @@ function stickyHeader($) {
 
 function toggleHeaderSearchHover() {
   let headerSearchButton = $(".header_search_input_wrapper");
-  headerSearchButton.click(function () {
-    headerSearchButton.siblings().addClass("search_mode");
-    headerSearchButton.addClass("active");
-  });
-}
+  $("html").click(function (e) {
+    headerSearchButton.siblings().removeClass("search_mode");
+    headerSearchButton.removeClass("active");
 
-function customerEvaluationIconEvent() {
-  $(".customer_evaluation_star_icon__").on("click", function () {
-    $(this).addClass("active");
-    $(this).prevAll().addClass("active");
-    $(this).nextAll().removeClass("active");
+    if($(e.target).hasClass("header_search_input_wrapper") || $(e.target).hasClass("icon__") || $(e.target).hasClass('header_search_input')) {
+      headerSearchButton.siblings().addClass("search_mode");
+      headerSearchButton.addClass("active");
+    }
   });
 }
 
@@ -272,4 +269,13 @@ function uploadProfilePhoto() {
     },
     false
   );
+}
+
+function chatScrollDirectionDown() {
+  let messageBody = document.querySelector(".chat_content__");
+  if (!messageBody) {
+    return;
+  }
+
+  messageBody.scrollTop = messageBody.scrollHeight;
 }

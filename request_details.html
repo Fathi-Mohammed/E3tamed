@@ -60,10 +60,10 @@
 
               <ul class="toolbar_options__ list-unstyled">
                 <li class="block__ header_search_input_wrapper">
-                  <figure class="figure__ icon__ loading-omd">
+                  <figure class="figure__ icon__">
                     <img
-                      class="lazy-omd img-om"
-                      data-src="assets/images/shapes/search.svg"
+                      class="img-om"
+                      src="assets/images/shapes/search.svg"
                       alt=".."
                     />
                   </figure>
@@ -434,7 +434,10 @@
               </div>
             </div>
             <div class="buttons_group__ flex_group__ group_gap__">
-              <a href="chat.html" class="submit-button__ provider_card_messaging_button">
+              <a
+                href="chat.html"
+                class="submit-button__ provider_card_messaging_button"
+              >
                 <figure class="figure__ icon__ loading-omd">
                   <img
                     class="lazy-omd img-om"
@@ -495,13 +498,28 @@
             <div class="provider_rate_block">
               <h4 class="title__">بناء على تجربتك قم بتقييم مقدم الخدمة</h4>
               <div class="customer_evaluation_icon_wrapper">
-                <div class="customer_evaluation_rating_wrapper__">
-                  <i class="customer_evaluation_star_icon__ fa fa-star"></i>
-                  <i class="customer_evaluation_star_icon__ fa fa-star"></i>
-                  <i class="customer_evaluation_star_icon__ fa fa-star"></i>
-                  <i class="customer_evaluation_star_icon__ fa fa-star"></i>
-                  <i class="customer_evaluation_star_icon__ fa fa-star"></i>
-                </div>
+                <div class="customer_rating_wrapper__">
+                  <div class="rating-group">
+            
+                      <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+            
+                      <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+            
+                      <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+            
+                      <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+            
+                      <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+            
+                      <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                      <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                  </div>
+              </div>
+
                 <button class="submit-button__ rate_submit_button">
                   تقييم
                 </button>
@@ -653,7 +671,7 @@
     </footer>
 
     <!-- End Footer -->
-    
+
     <!-- Start Modal -->
     <!-- send request modal -->
 
@@ -869,14 +887,14 @@
               type="button"
               class="submit-button__ full_width__ log_out_button"
             >
-            <figure class="figure__ icon__ loading-omd">
-              <img
-                class="lazy-omd img-om"
-                data-src="assets/images/shapes/log_out.svg"
-                alt=".."
-              />
-            </figure>
-            تأكيد الخروج
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/shapes/log_out.svg"
+                  alt=".."
+                />
+              </figure>
+              تأكيد الخروج
             </button>
 
             <button

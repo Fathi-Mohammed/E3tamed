@@ -2,9 +2,6 @@
   display: flex;
   align-items: center;
 
-  @include sm {
-    display: block;
-  }
 
   .singup_link {
     display: flex;
@@ -23,21 +20,8 @@
     box-shadow: 0 0 60px $shadowColor;
     transition: 0.5s;
 
-    @include sm {
-      border-radius: 0;
-      margin-bottom: 0;
-      height: 40px;
-      min-width: 70px;
-      font-size: 12px;
-      padding: 3px 10px;
-    }
-
     &:not(:last-child) {
       margin-inline-end: 8px;
-
-      @include sm {
-        margin-inline-end: 0;
-      }
     }
 
     &:hover {
@@ -56,11 +40,6 @@
         background-color: #fff;
       }
 
-      @include sm {
-        background-color: rgba(#fff, 0.2);
-        color: #fff;
-        margin-bottom: 10px;
-      }
     }
 
     .icon__ {
@@ -71,11 +50,6 @@
 
   &.nav_sign_block__ {
     display: none;
-
-    @include sm {
-      display: block;
-      margin-bottom: 30px;
-    }
   }
 }
 
@@ -100,6 +74,10 @@
         height: 49px;
         border: 1px solid rgba(#fff, 0.2);
         background-color: transparent;
+
+        @include xxs {
+          font-size: 12px;
+        }
         
         &:hover {
           background-color: rgba($primaryColor, 0.2);

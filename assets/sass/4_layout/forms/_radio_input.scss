@@ -41,7 +41,7 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
-    border: 2px solid #86959F;
+    border: 2px solid #86959f;
     background-position: center center;
     background-size: 10px;
     background-repeat: no-repeat;
@@ -53,5 +53,53 @@
     margin-inline-start: 5px;
     cursor: pointer;
     color: $headingMainColor;
+  }
+}
+
+
+
+/////////////////////////////////////////////////
+
+.customer_evaluation_icon_wrapper {
+  .rating-group {
+    display: inline-flex;
+    gap: 8px;
+    margin: 0;
+    margin-inline-end: 35px;
+  }
+
+  .rating__icon {
+    pointer-events: none;
+  }
+
+  .rating__input {
+    // position: absolute !important;
+    // left: -9999px !important;
+    display: none;
+  }
+
+  .rating__input--none {
+    display: none;
+  }
+
+  .rating__label {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .rating__icon--star {
+    color: orange;
+  }
+
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
   }
 }
